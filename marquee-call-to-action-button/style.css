@@ -1,0 +1,64 @@
+/**
+* Quick and dirty reset & wrapper set-up
+*/
+* { padding: 0; margin: 0; box-sizing: border-box; }
+html, body { height: 100%; font-family: uniform; }
+.wrapper {
+   position: relative;
+   width: 100%;
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body { 
+    font-family: 'Uniform', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	background: #DEDEDE;
+}
+
+#feh-marquee-wrapper {
+	position: relative; 
+	overflow: hidden;
+	display: flex;
+	background: #331a9c;
+	border: 7px solid #817ac4;
+	max-width: 350px;
+	border-radius: 100px;
+} 
+
+	#feh-marquee {
+		display: flex;
+	}
+		#feh-marquee a {
+			color: #fff;
+			font-weight: 800;
+			width: 320px;
+			font-size: 22px;
+			padding: 30px 25px;
+			text-transform: uppercase;
+			text-decoration: none;
+			position: relative;
+		}
+		#feh-marquee a:before {
+			content: "";
+			position: absolute;
+			width: 70px;
+			height: 15px;
+			background: url("line.svg") no-repeat;
+			bottom: 12px;
+			right: 72px;
+		}
+		#feh-marquee a:after {
+			content: "";
+			position: absolute;
+			width: 50px;
+			background: url(phone.svg) no-repeat;
+			top: 50%;
+			right: 5px;
+			height: 50%;
+			transform: translateY(-50%);
+		}
